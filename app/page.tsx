@@ -64,7 +64,7 @@ export default function Home() {
                   alt="Hero Image"
                   className="aspect-video overflow-hidden rounded-xl object-cover object-center"
                   height="310"
-                  src="/placeholder.svg?height=620&width=1100"
+                  src="/images/give-rise-to-happy-faces.jpg"
                   width="550"
                 />
               </div>
