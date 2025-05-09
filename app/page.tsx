@@ -30,7 +30,7 @@ export default function Home() {
             <Button variant="ghost" size="sm" className="hidden md:flex">
               Log in
             </Button>
-            <Button size="sm">Get Started</Button>
+            <Button size="sm">Get Started Now</Button>
           </div>
         </div>
       </header>
