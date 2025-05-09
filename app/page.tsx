@@ -23,14 +23,14 @@ export default function Home() {
               Pricing
             </Link>
             <Link href="#contact" className="text-sm font-medium transition-colors hover:text-foreground/80">
-              Contact Us
+              Contact Team
             </Link>
           </nav>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" className="hidden md:flex">
               Log in
             </Button>
-            <Button size="sm">Get Started Now</Button>
+            <Button size="sm">Let's Get Started</Button>
           </div>
         </div>
       </header>
