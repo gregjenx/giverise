@@ -23,7 +23,7 @@ export default function Home() {
               Pricing
             </Link>
             <Link href="#contact" className="text-sm font-medium transition-colors hover:text-foreground/80">
-              Contact
+              Contact Us
             </Link>
           </nav>
           <div className="flex items-center gap-4">
