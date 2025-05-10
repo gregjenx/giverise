@@ -10,7 +10,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
             <Zap className="h-5 w-5" />
-            <span>GiveRise.ai</span>
+            <span>GiveRise.ai</span><img src="/images/giverise-logo1.png" alt="GiveRise Logo"></img>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="#features" className="text-sm font-medium transition-colors hover:text-foreground/80">
@@ -23,7 +23,7 @@ export default function Home() {
               Pricing
             </Link>
             <Link href="#contact" className="text-sm font-medium transition-colors hover:text-foreground/80">
-              Contact Team
+              Contact Our Team
             </Link>
           </nav>
           <div className="flex items-center gap-4">
