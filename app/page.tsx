@@ -11,7 +11,7 @@ export default function Home() {
           <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-9" />
           <nav className="hidden md:flex gap-6">
             <Link href="#features" className="text-sm font-medium transition-colors hover:text-foreground/80">
-              Features
+              OurFeatures
             </Link>
             <Link href="#testimonials" className="text-sm font-medium transition-colors hover:text-foreground/80">
               Testimonials
