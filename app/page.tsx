@@ -8,10 +8,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2 font-bold">
-            <Zap className="h-5 w-5" />
-            <span>GiveRise.ai</span>
-          </div>
+          <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-9" />
           <nav className="hidden md:flex gap-6">
             <Link href="#features" className="text-sm font-medium transition-colors hover:text-foreground/80">
               Features
@@ -40,13 +37,12 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Raise the Bar.
-                    <br /> Lift the Cause.
+                  <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
+                    More support, less effort.
+                    <br /> GiveRise to what matters.
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Give rise to efforts that once felt out of reach—sharpening outreach, deepening engagement, and
-                    building lasting support where it matters most, with stakeholders.
+                  Empower your team to turn interest into involvement. GiveRise simplifies outreach, amplifies engagement, and helps you grow support effortlessly.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -61,10 +57,10 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <img
-                  alt="Hero Image"
+                  alt="Happy stakeholders"
                   className="aspect-video overflow-hidden rounded-xl object-cover object-center"
                   height="310"
-                  src="/placeholder.svg?height=620&width=1100"
+                  src="/images/give-rise-to-happy-stakeholders.jpg"
                   width="550"
                 />
               </div>
@@ -76,7 +72,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Features
+                  Key Features
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Tools That Elevate Dialogue and Deepen Trust</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -132,7 +128,7 @@ export default function Home() {
               <div className="flex flex-col justify-between rounded-lg border p-6 shadow-sm">
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                   "GiveRise helped us connect with stakeholders in a way that finally felt personal and purposeful. We’re not just reaching more people—we’re building real momentum."
+                   "GiveRise helped us connect with stakeholders in a way that finally felt personal and purposeful. We're not just reaching more people—we're building real momentum."
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 pt-4">
@@ -158,7 +154,7 @@ export default function Home() {
               <div className="flex flex-col justify-between rounded-lg border p-6 shadow-sm">
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                  "The platform made our ambitious goals feel doable. With better insight and smoother coordination, we’ve launched two new programs we didn’t think we had the capacity for."
+                  "The platform made our ambitious goals feel doable. With better insight and smoother coordination, we've launched two new programs we didn't think we had the capacity for."
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 pt-4">
