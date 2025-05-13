@@ -14,7 +14,7 @@ export default function Home() {
               OurFeatures
             </Link>
             <Link href="#testimonials" className="text-sm font-medium transition-colors hover:text-foreground/80">
-              Testimonials
+              Testimonial
             </Link>
             <Link href="#pricing" className="text-sm font-medium transition-colors hover:text-foreground/80">
               Pricing
