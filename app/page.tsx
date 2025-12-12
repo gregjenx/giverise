@@ -10,14 +10,14 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-9" />
           <nav className="hidden md:flex gap-6">
-            <Link href="#features" className="text-sm font-medium transition-colors hover:text-foreground/80">
-              OurFeatures
-            </Link>
-            <Link href="#testimonials" className="text-sm font-medium transition-colors hover:text-foreground/80">
-              Testimonial
+            <Link href="#product" className="text-sm font-medium transition-colors hover:text-foreground/80">
+              Product
             </Link>
             <Link href="#pricing" className="text-sm font-medium transition-colors hover:text-foreground/80">
               Pricing
+            </Link>
+            <Link href="#resources" className="text-sm font-medium transition-colors hover:text-foreground/80">
+              Resources
             </Link>
             <Link href="#contact" className="text-sm font-medium transition-colors hover:text-foreground/80">
               Contact Us
@@ -33,86 +33,95 @@ export default function Home() {
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
-                    More support, less effort.
-                    <br /> GiveRise to what matters.
+                    Custom AI Chatbots That <br />
+                    Grow Your Non-Profit's Mission.
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Empower your team to turn interest into involvement. GiveRise simplifies outreach, amplifies engagement, and helps you grow support effortlessly.
+                    Engage donors and volunteers 24/7. Embed a fully customizable AI assistant on your website in minutes—free forever.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg">
-                    Get Started
+                    Build Your Free Chatbot
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                   <Button variant="outline" size="lg">
-                    Learn More
+                    See It in Action
                   </Button>
                 </div>
               </div>
-              <div className="flex items-center justify-center">
+              <div className="flex flex-col items-center justify-center space-y-2">
                 <img
-                  alt="Happy stakeholders"
+                  alt="Non-profit team"
                   className="aspect-video overflow-hidden rounded-xl object-cover object-center"
                   height="310"
                   src="/images/give-rise-to-happy-stakeholders.jpg"
                   width="550"
                 />
+                <p className="text-sm text-muted-foreground italic">
+                  Allow your website to connect authentically around your mission
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-          <div className="container px-4 md:px-6">
+        </section >
+        <section id="product" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+          <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Key Features
+                  Our Product
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Tools That Elevate Dialogue and Deepen Trust</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                 Our solutions help you engage stakeholders with clarity and purpose—whether you're informing, aligning, or activating them around your mission. By making communication more intuitive and responsive, we help you turn shared values into shared momentum.
+                  Our solutions help you engage stakeholders with clarity and purpose—whether you're informing, aligning, or activating them around your mission.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-3">
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
-                <div className="rounded-full bg-primary p-2 text-primary-foreground">
-                  <Laptop className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold">Intuitive Dashboard</h3>
+                <img
+                  src="/images/embedded-mission-chat.png"
+                  alt="Embedded Chat showing project impact"
+                  className="w-full rounded-md shadow-sm mb-4"
+                />
+                <h3 className="text-xl font-bold">Your Mission, Your Voice</h3>
                 <p className="text-center text-muted-foreground">
-                  Our smart interface puts insights at your fingertips—making it easy to understand stakeholder engagement, track progress, and take meaningful action.
+                  Fully customizable chatbots that reflect your organization's tone and values. Set the engagement parameters to match your goals.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
-                <div className="rounded-full bg-primary p-2 text-primary-foreground">
-                  <Zap className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold">Real-time Analytics</h3>
+                <img
+                  src="/images/crm-integration-visual.png"
+                  alt="CRM Integration Visual"
+                  className="w-full rounded-md shadow-sm mb-4"
+                />
+                <h3 className="text-xl font-bold">Connects to Your Truth</h3>
                 <p className="text-center text-muted-foreground">
-                  Make data-driven decisions with real-time insights and comprehensive analytics.
+                  Seamlessly integrates with your existing CRM. Track donor journeys and volunteer interests automatically.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
-                <div className="rounded-full bg-primary p-2 text-primary-foreground">
-                  <CheckCircle2 className="h-6 w-6" />
-                </div>
-                <h3 className="text-xl font-bold">Seamless Integration</h3>
+                <img
+                  src="/images/analytics-dashboard-visual.png"
+                  alt="Analytics Dashboard Visual"
+                  className="w-full rounded-md shadow-sm mb-4"
+                />
+                <h3 className="text-xl font-bold">Measure What Matters</h3>
                 <p className="text-center text-muted-foreground">
-                  Easily connect with your existing tools and workflows for maximum efficiency.
+                  Real-time analytics to view engagement metrics and conversation history. Understand what drives your community.
                 </p>
               </div>
             </div>
           </div>
         </section>
         <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
@@ -128,7 +137,7 @@ export default function Home() {
               <div className="flex flex-col justify-between rounded-lg border p-6 shadow-sm">
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                   "GiveRise helped us connect with stakeholders in a way that finally felt personal and purposeful. We're not just reaching more people—we're building real momentum."
+                    "GiveRise helped us connect with stakeholders in a way that finally felt personal and purposeful. We're not just reaching more people—we're building real momentum."
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 pt-4">
@@ -154,7 +163,7 @@ export default function Home() {
               <div className="flex flex-col justify-between rounded-lg border p-6 shadow-sm">
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                  "The platform made our ambitious goals feel doable. With better insight and smoother coordination, we've launched two new programs we didn't think we had the capacity for."
+                    "The platform made our ambitious goals feel doable. With better insight and smoother coordination, we've launched two new programs we didn't think we had the capacity for."
                   </p>
                 </div>
                 <div className="flex items-center space-x-4 pt-4">
@@ -181,7 +190,7 @@ export default function Home() {
           </div>
         </section>
         <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
-          <div className="container px-4 md:px-6">
+          <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
@@ -196,87 +205,82 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-3">
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Starter</h3>
-                  <p className="text-muted-foreground">Perfect for small businesses just getting started.</p>
+                  <h3 className="text-2xl font-bold">Free</h3>
+                  <p className="text-muted-foreground">Everything you need to get started.</p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold">
-                  $29
-                  <span className="ml-1 text-sm font-medium text-muted-foreground">/month</span>
+                  $0
+                  <span className="ml-1 text-sm font-medium text-muted-foreground">/ forever</span>
                 </div>
                 <ul className="mt-6 space-y-2">
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Basic analytics</span>
+                    <span>Essential Chatbot</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Up to 5 team members</span>
+                    <span>500 messages / mo</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>5GB storage</span>
+                    <span>Standard Analytics</span>
                   </li>
                 </ul>
-                <Button className="mt-6">Get Started</Button>
+                <Button className="mt-6">Start for Free</Button>
               </div>
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm ring-2 ring-primary">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Professional</h3>
-                  <p className="text-muted-foreground">For growing businesses with more advanced needs.</p>
+                  <h3 className="text-2xl font-bold">Growth</h3>
+                  <p className="text-muted-foreground">For non-profits scaling their impact.</p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold">
-                  $79
+                  $49
                   <span className="ml-1 text-sm font-medium text-muted-foreground">/month</span>
                 </div>
                 <ul className="mt-6 space-y-2">
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Advanced analytics</span>
+                    <span>Advanced Customization</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Up to 20 team members</span>
+                    <span>5,000 messages / mo</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>50GB storage</span>
+                    <span>CRM Integration</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Priority support</span>
+                    <span>Priority Support</span>
                   </li>
                 </ul>
                 <Button className="mt-6">Get Started</Button>
               </div>
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Enterprise</h3>
-                  <p className="text-muted-foreground">For large organizations with specific requirements.</p>
+                  <h3 className="text-2xl font-bold">Impact</h3>
+                  <p className="text-muted-foreground">For large organizations with unique needs.</p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold">
-                  $199
-                  <span className="ml-1 text-sm font-medium text-muted-foreground">/month</span>
+                  Custom
                 </div>
                 <ul className="mt-6 space-y-2">
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Custom analytics</span>
+                    <span>Unlimited Messages</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Unlimited team members</span>
+                    <span>Dedicated Success Manager</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>500GB storage</span>
+                    <span>Custom Integrations</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>24/7 dedicated support</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Custom integrations</span>
+                    <span>24/7 Support</span>
                   </li>
                 </ul>
                 <Button className="mt-6">Contact Sales</Button>
@@ -305,7 +309,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
+      </main >
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <div className="flex items-center gap-2 font-bold">
@@ -325,6 +329,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+    </div >
   )
 }
