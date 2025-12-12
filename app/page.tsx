@@ -38,11 +38,11 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
-                    More support, less effort.
+                  
                     <br /> GiveRise to what matters.
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Empower your team to turn interest into involvement. GiveRise simplifies outreach, amplifies engagement, and helps you grow support effortlessly.
+                  Empower your team to turn interest into involvement. GiveRise simplifies outreach, amplifies engagement, and helps you grow support consistently.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
