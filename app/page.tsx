@@ -3,13 +3,18 @@ import { ArrowRight, CheckCircle2, Laptop, Zap } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
+import { UpliftingWave } from "@/components/UpliftingWave"
+import { FeatureExplorer } from "@/components/FeatureExplorer"
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-9" />
-          <nav className="hidden md:flex gap-6">
+      <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-16 items-center">
+          <Link href="/" className="mr-8">
+            <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-8" />
+          </Link>
+          <nav className="hidden md:flex gap-6 items-center">
             <Link href="#product" className="text-sm font-medium transition-colors hover:text-foreground/80">
               Product
             </Link>
@@ -22,54 +27,77 @@ export default function Home() {
             <Link href="#contact" className="text-sm font-medium transition-colors hover:text-foreground/80">
               Contact Us
             </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="hidden md:flex">
+            <Link href="#" className="text-sm font-medium transition-colors hover:text-foreground/80">
               Log in
-            </Button>
-            <Button size="sm">Get Started Now</Button>
+            </Link>
+          </nav>
+          <div className="ml-auto flex items-center gap-4">
+            <Button size="sm" className="rounded-full">Get Started Now</Button>
           </div>
         </div>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
-                    Custom AI Chatbots That <br />
-                    Grow Your Non-Profit's Mission.
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Engage donors and volunteers 24/7. Embed a fully customizable AI assistant on your website in minutes—free forever.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg">
-                    Build Your Free Chatbot
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                  <Button variant="outline" size="lg">
-                    See It in Action
-                  </Button>
-                </div>
+        <section className="w-full pt-10 pb-20 md:pt-20 md:pb-32 lg:pt-24 lg:pb-48 bg-background relative overflow-hidden">
+          <UpliftingWave />
+          <div className="container px-4 md:px-6 relative z-10">
+            <div className="flex flex-col items-center justify-center space-y-10 text-center">
+              <div className="flex items-center justify-center">
+                <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-10 md:h-12" />
               </div>
-              <div className="flex flex-col items-center justify-center space-y-2">
-                <img
-                  alt="Non-profit team"
-                  className="aspect-video overflow-hidden rounded-xl object-cover object-center"
-                  height="310"
-                  src="/images/give-rise-to-happy-stakeholders.jpg"
-                  width="550"
-                />
-                <p className="text-sm text-muted-foreground italic">
-                  Allow your website to connect authentically around your mission
+              <div className="space-y-6 max-w-4xl">
+                <h1 className="text-5xl font-bold tracking-tighter sm:text-7xl lg:text-8xl text-foreground">
+                  Experience impact
+                </h1>
+                <p className="mx-auto max-w-[800px] text-muted-foreground text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight">
+                  with Custom AI chatbots for non-profits.
                 </p>
+              </div>
+              <div className="flex flex-col gap-4 min-[400px]:flex-row justify-center w-full pt-4">
+                <Button size="lg" className="rounded-full px-8 h-12 text-base">
+                  Build Your Free Chatbot
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+                <Button variant="outline" size="lg" className="rounded-full px-8 h-12 text-base">
+                  See It in Action
+                </Button>
               </div>
             </div>
           </div>
-        </section >
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-background border-t">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+              <div className="flex flex-col justify-center space-y-4">
+                <div className="space-y-2">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                    Unlock Your Organization's Potential
+                  </h2>
+                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                    Our platform empowers non-profits to scale their impact through intelligent automation and meaningful engagement.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Button size="lg" className="rounded-full px-8">
+                    Get Started
+                  </Button>
+                  <Button variant="outline" size="lg" className="rounded-full px-8">
+                    Learn More
+                  </Button>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="relative aspect-video overflow-hidden rounded-xl border bg-muted/50 shadow-xl lg:aspect-square">
+                  <img
+                    src="/images/give-rise-to-happy-stakeholders.jpg"
+                    alt="Happy stakeholders engaging with the platform"
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <FeatureExplorer />
         <section id="product" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -202,11 +230,12 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-3">
-              <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+            <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 py-12">
+              {/* Tier 1: Starter */}
+              <div className="flex w-full min-w-[300px] max-w-[350px] flex-col rounded-lg border bg-background p-6 shadow-sm ring-2 ring-[#0EA5E9] transition-all duration-300 hover:-translate-y-1 hover:bg-[#0EA5E9]/5 hover:shadow-xl hover:shadow-[#0EA5E9]/20">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Free</h3>
-                  <p className="text-muted-foreground">Everything you need to get started.</p>
+                  <h3 className="text-2xl font-bold text-[#0EA5E9]">Starter</h3>
+                  <p className="text-muted-foreground">Perfect for individuals and small experiments.</p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold">
                   $0
@@ -214,76 +243,132 @@ export default function Home() {
                 </div>
                 <ul className="mt-6 space-y-2">
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Essential Chatbot</span>
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Basic Widget</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>500 messages / mo</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>Standard Analytics</span>
                   </li>
                 </ul>
-                <Button className="mt-6">Start for Free</Button>
+                <Button className="mt-6 bg-[#0EA5E9] hover:bg-[#0284c7]">Start for Free</Button>
               </div>
-              <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm ring-2 ring-primary">
+
+              {/* Tier 2: Essential */}
+              <div className="flex w-full min-w-[300px] max-w-[350px] flex-col rounded-lg border bg-background p-6 shadow-sm ring-2 ring-[#0EA5E9] transition-all duration-300 hover:-translate-y-1 hover:bg-[#0EA5E9]/5 hover:shadow-xl hover:shadow-[#0EA5E9]/20">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Growth</h3>
-                  <p className="text-muted-foreground">For non-profits scaling their impact.</p>
+                  <h3 className="text-2xl font-bold text-[#0EA5E9]">Essential</h3>
+                  <p className="text-muted-foreground">For small non-profits getting started.</p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold">
                   $49
-                  <span className="ml-1 text-sm font-medium text-muted-foreground">/month</span>
+                  <span className="ml-1 text-sm font-medium text-muted-foreground">/ month</span>
                 </div>
                 <ul className="mt-6 space-y-2">
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Advanced Customization</span>
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Basic Customization</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>5,000 messages / mo</span>
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>2,000 messages / mo</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Email Support</span>
+                  </li>
+                </ul>
+                <Button className="mt-6 bg-[#0EA5E9] hover:bg-[#0284c7]">Get Essential</Button>
+              </div>
+
+              {/* Tier 3: Growth (Featured) */}
+              <div className="flex w-full min-w-[300px] max-w-[350px] flex-col rounded-lg border bg-background p-6 shadow-sm ring-2 ring-[#0EA5E9] transition-all duration-300 hover:-translate-y-1 hover:bg-[#0EA5E9]/5 hover:shadow-xl hover:shadow-[#0EA5E9]/20">
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-bold text-[#0EA5E9]">Growth</h3>
+                  <p className="text-muted-foreground">For growing organizations scaling impact.</p>
+                </div>
+                <div className="mt-4 flex items-baseline text-3xl font-bold">
+                  $149
+                  <span className="ml-1 text-sm font-medium text-muted-foreground">/ month</span>
+                </div>
+                <ul className="mt-6 space-y-2">
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>10,000 messages / mo</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>CRM Integration</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Priority Support</span>
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Remove Branding</span>
                   </li>
                 </ul>
-                <Button className="mt-6">Get Started</Button>
+                <Button className="mt-6 bg-[#0EA5E9] hover:bg-[#0284c7]">Get Growth</Button>
               </div>
-              <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+
+              {/* Row 2 */}
+
+              {/* Tier 4: Scale */}
+              <div className="flex w-full min-w-[300px] max-w-[350px] flex-col rounded-lg border bg-background p-6 shadow-sm ring-2 ring-[#0EA5E9] transition-all duration-300 hover:-translate-y-1 hover:bg-[#0EA5E9]/5 hover:shadow-xl hover:shadow-[#0EA5E9]/20">
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Impact</h3>
-                  <p className="text-muted-foreground">For large organizations with unique needs.</p>
+                  <h3 className="text-2xl font-bold text-[#0EA5E9]">Scale</h3>
+                  <p className="text-muted-foreground">For high-volume organizations.</p>
+                </div>
+                <div className="mt-4 flex items-baseline text-3xl font-bold">
+                  $399
+                  <span className="ml-1 text-sm font-medium text-muted-foreground">/ month</span>
+                </div>
+                <ul className="mt-6 space-y-2">
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>50,000 messages / mo</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Priority Support</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Advanced Analytics</span>
+                  </li>
+                </ul>
+                <Button className="mt-6 bg-[#0EA5E9] hover:bg-[#0284c7]">Get Scale</Button>
+              </div>
+
+              {/* Tier 5: Mission (Custom) */}
+              <div className="flex w-full min-w-[300px] max-w-[350px] flex-col rounded-lg border bg-background p-6 shadow-sm ring-2 ring-[#0EA5E9] transition-all duration-300 hover:-translate-y-1 hover:bg-[#0EA5E9]/5 hover:shadow-xl hover:shadow-[#0EA5E9]/20">
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-bold text-[#0EA5E9]">Mission</h3>
+                  <p className="text-muted-foreground">For organizations with unique needs.</p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold">
                   Custom
                 </div>
                 <ul className="mt-6 space-y-2">
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>Unlimited Messages</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>Dedicated Success Manager</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>Custom Integrations</span>
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Unique Analytics & Goals</span>
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                    <span>24/7 Support</span>
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Custom Integrations</span>
                   </li>
                 </ul>
-                <Button className="mt-6">Contact Sales</Button>
+                <Button className="mt-6 bg-[#0EA5E9] hover:bg-[#0284c7]">Contact Sales</Button>
               </div>
             </div>
           </div>
@@ -297,6 +382,10 @@ export default function Home() {
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Get in touch with our team to learn how our platform can help you achieve your organization's goals.
               </p>
+              <div className="flex flex-col gap-2 text-muted-foreground">
+                <p><strong>Phone:</strong> 202-507-8000</p>
+                <p><strong>Email:</strong> info@giverise.ai</p>
+              </div>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
               <Button size="lg">
@@ -313,8 +402,7 @@ export default function Home() {
       <footer className="w-full border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <div className="flex items-center gap-2 font-bold">
-            <Zap className="h-5 w-5" />
-            <span>GiveRise.ai</span>
+            <img src="/images/giverise-logo-black.png" alt="GiveRise.ai Logo" className="h-6" />
           </div>
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © 2025 GiveRise.ai. All rights reserved.

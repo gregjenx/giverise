@@ -17,6 +17,9 @@ const config: Config = {
 			},
 		},
 		extend: {
+			fontFamily: {
+				sans: ["var(--font-manrope)", "sans-serif"],
+			},
 			colors: {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
