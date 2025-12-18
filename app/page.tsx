@@ -46,7 +46,7 @@ export default function Home() {
               </div>
               <div className="space-y-6 max-w-4xl">
                 <h1 className="text-5xl font-bold tracking-tighter sm:text-7xl lg:text-8xl text-foreground">
-                  Experience impact
+                  Experience alignment
                 </h1>
                 <p className="mx-auto max-w-[800px] text-muted-foreground text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight">
                   with Custom AI chatbots for non-profits.
@@ -70,11 +70,11 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
-                  
+
                     <br /> GiveRise to what matters.
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Empower your team to turn interest into involvement. GiveRise simplifies outreach, amplifies engagement, and helps you grow support consistently.
+                    Empower your team to turn interest into involvement. GiveRise simplifies outreach, amplifies engagement, and helps you grow support consistently.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
