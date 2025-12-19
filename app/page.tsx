@@ -15,19 +15,19 @@ export default function Home() {
             <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-8" />
           </Link>
           <nav className="hidden md:flex gap-6 items-center">
-            <Link href="#product" className="text-sm font-medium transition-colors hover:text-foreground/80">
+            <Link href="#product" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
               Product
             </Link>
-            <Link href="#pricing" className="text-sm font-medium transition-colors hover:text-foreground/80">
+            <Link href="#pricing" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
               Pricing
             </Link>
-            <Link href="#resources" className="text-sm font-medium transition-colors hover:text-foreground/80">
+            <Link href="#resources" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
               Resources
             </Link>
-            <Link href="#contact" className="text-sm font-medium transition-colors hover:text-foreground/80">
+            <Link href="#contact" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
               Contact Us
             </Link>
-            <Link href="#" className="text-sm font-medium transition-colors hover:text-foreground/80">
+            <Link href="#" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
               Log in
             </Link>
           </nav>
@@ -45,8 +45,8 @@ export default function Home() {
                 <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-10 md:h-12" />
               </div>
               <div className="space-y-6 max-w-4xl">
-                <h1 className="text-5xl font-bold tracking-tighter sm:text-7xl lg:text-8xl text-foreground">
-                  Experience alignment
+                <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl lg:text-7xl text-foreground">
+                  Experience impact
                 </h1>
                 <p className="mx-auto max-w-[800px] text-muted-foreground text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight">
                   with Custom AI chatbots for non-profits.
