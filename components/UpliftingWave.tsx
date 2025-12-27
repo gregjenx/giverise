@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { MessageCircle, MessageSquare, MessageCircleMore } from "lucide-react"
 
 export function UpliftingWave() {
   const [particles, setParticles] = useState<any[]>([])
@@ -22,7 +23,12 @@ export function UpliftingWave() {
       // Randomize appearance
       const opacityStart = 0.05 + Math.random() * 0.15
       const size = 12 + Math.random() * 16
-      const type = Math.random() > 0.6 ? 'plus' : 'arrow' // 60% arrows, 40% pluses
+
+      const randomType = Math.random();
+      let type;
+      if (randomType < 0.33) type = 'circle';
+      else if (randomType < 0.66) type = 'square';
+      else type = 'more';
 
       return {
         id: i,
@@ -54,43 +60,16 @@ export function UpliftingWave() {
           className="absolute animate-float-up text-[#0EA5E9]"
           style={p.style}
         >
-          {p.type === 'arrow' ? (
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              width="100%"
-              height="100%"
-            >
-              {/* Sharp Harpoon/Check Tip */}
-              <path
-                d="M4 14L9 19L20 6"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+          {p.type === 'circle' ? (
+            <MessageCircle width="100%" height="100%" strokeWidth={1.5} />
+          ) : p.type === 'square' ? (
+            <MessageSquare width="100%" height="100%" strokeWidth={1.5} />
           ) : (
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              width="100%"
-              height="100%"
-            >
-              {/* Plus Sign */}
-              <path
-                d="M12 5V19M5 12H19"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <MessageCircleMore width="100%" height="100%" strokeWidth={1.5} />
           )}
         </div>
       ))}
     </div>
   )
 }
+

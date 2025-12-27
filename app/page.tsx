@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 
 import { UpliftingWave } from "@/components/UpliftingWave"
 import { FeatureExplorer } from "@/components/FeatureExplorer"
+import { HeroUrlInput } from "@/components/HeroUrlInput"
 
 export default function Home() {
   return (
@@ -52,14 +53,13 @@ export default function Home() {
                   with Custom AI chatbots for non-profits.
                 </p>
               </div>
-              <div className="flex flex-col gap-4 min-[400px]:flex-row justify-center w-full pt-4">
-                <Button size="lg" className="rounded-full px-8 h-12 text-base">
-                  Build Your Free Chatbot
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="lg" className="rounded-full px-8 h-12 text-base">
-                  See It in Action
-                </Button>
+              <div className="flex flex-col gap-4 min-w-full pt-4 items-center">
+                <HeroUrlInput />
+                <div className="mt-2">
+                  <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+                    Or see a demo without your URL <ArrowRight className="ml-1 h-3 w-3" />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
