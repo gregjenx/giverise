@@ -16,8 +16,8 @@ export default function Home() {
             <img src="/images/giverise-logo-black.png" alt="GiveRise Logo" className="h-8" />
           </Link>
           <nav className="hidden md:flex gap-6 items-center">
-            <Link href="#product" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
-              Product
+            <Link href="#tools" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
+              Tools
             </Link>
             <Link href="#pricing" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
               Pricing
@@ -47,10 +47,10 @@ export default function Home() {
               </div>
               <div className="space-y-6 max-w-4xl">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl lg:text-7xl text-foreground">
-                  Experience impact
+                  Experience alignment.<br />Achieve more.
                 </h1>
                 <p className="mx-auto max-w-[800px] text-muted-foreground text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight">
-                  with Custom AI chatbots for non-profits.
+                  AI communications that unite your team and your visitors.
                 </p>
               </div>
               <div className="flex flex-col gap-4 min-w-full pt-4 items-center">
@@ -71,10 +71,10 @@ export default function Home() {
                 <div className="space-y-2">
                   <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
 
-                    <br /> GiveRise to what matters.
+                    <br /> GiveRise to true alignment.
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Empower your team to turn interest into involvement. GiveRise simplifies outreach, amplifies engagement, and helps you grow support consistently.
+                    When visitors feel understood and staff feels empowered, you do more than engage—you achieve. GiveRise connects every interaction to your mission's core.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -99,16 +99,16 @@ export default function Home() {
           </div>
         </section>
         <FeatureExplorer />
-        <section id="product" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="tools" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Our Product
+                  Our Tools
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Tools That Elevate Dialogue and Deepen Trust</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Everything You Need to Align</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our solutions help you engage stakeholders with clarity and purpose—whether you're informing, aligning, or activating them around your mission.
+                  One platform, two powerful tools. GiveRise Connect helps visitors find their way, while GiveRise Core ensures your staff is there to guide them.
                 </p>
               </div>
             </div>
@@ -116,34 +116,34 @@ export default function Home() {
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <img
                   src="/images/embedded-mission-chat.png"
-                  alt="Embedded Chat showing project impact"
+                  alt="GiveRise Connect Interface"
                   className="w-full rounded-md shadow-sm mb-4"
                 />
-                <h3 className="text-xl font-bold">Your Mission, Your Voice</h3>
+                <h3 className="text-xl font-bold">GiveRise Connect</h3>
                 <p className="text-center text-muted-foreground">
-                  Fully customizable chatbots that reflect your organization's tone and values. Set the engagement parameters to match your goals.
+                  Meet your donors where they are. Authentic, automated conversations that guide every visitor to their unique impact.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <img
                   src="/images/crm-integration-visual.png"
-                  alt="CRM Integration Visual"
+                  alt="GiveRise Core Interface"
                   className="w-full rounded-md shadow-sm mb-4"
                 />
-                <h3 className="text-xl font-bold">Connects to Your Truth</h3>
+                <h3 className="text-xl font-bold">GiveRise Core</h3>
                 <p className="text-center text-muted-foreground">
-                  Seamlessly integrates with your existing CRM. Track donor journeys and volunteer interests automatically.
+                  Unify your team’s efforts. Tools that keep your staff aligned, informed, and ready to deepen every relationship.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <img
                   src="/images/analytics-dashboard-visual.png"
-                  alt="Analytics Dashboard Visual"
+                  alt="Unified Impact Dashboard"
                   className="w-full rounded-md shadow-sm mb-4"
                 />
-                <h3 className="text-xl font-bold">Measure What Matters</h3>
+                <h3 className="text-xl font-bold">Unified Impact</h3>
                 <p className="text-center text-muted-foreground">
-                  Real-time analytics to view engagement metrics and conversation history. Understand what drives your community.
+                  See the whole picture. Real-time data that connects engagement to outcomes, proving the value of every interaction.
                 </p>
               </div>
             </div>
@@ -225,10 +225,11 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Pricing
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Simple, Transparent Pricing</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Alignment at Every Stage</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Choose the plan that's right for your business.
+                  Transparent pricing designed to help you scale your impact, not your overhead.
                 </p>
+
               </div>
             </div>
             <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 py-12">
@@ -253,7 +254,11 @@ export default function Home() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
-                    <span>Standard Analytics</span>
+                    <span>Standard Engagement Analytics</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Basic Visitor Activity</span>
                   </li>
                 </ul>
                 <Button className="mt-6 bg-[#0EA5E9] hover:bg-[#0284c7]">Start for Free</Button>
@@ -277,6 +282,14 @@ export default function Home() {
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>2,000 messages / mo</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Visitor Interest Tracking</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Data for Targeted Outreach</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
@@ -307,6 +320,14 @@ export default function Home() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Full Visitor Journey Insights</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Advanced Interaction Data</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>Remove Branding</span>
                   </li>
                 </ul>
@@ -329,6 +350,14 @@ export default function Home() {
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>50,000 messages / mo</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Real-time Visitor Monitoring</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Strategic Engagement Intelligence</span>
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
@@ -366,6 +395,14 @@ export default function Home() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Bespoke Data Solutions</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
+                    <span>Custom Impact Reporting</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle2 className="mr-2 h-4 w-4 text-[#0EA5E9]" />
                     <span>Custom Integrations</span>
                   </li>
                 </ul>
@@ -378,10 +415,10 @@ export default function Home() {
           <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Ready to Transform Your Non-Profit?
+                Ready to Align and Rise?
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get in touch with our team to learn how our platform can help you achieve your organization's goals.
+                Get in touch to see how better alignment allows you to achieve significantly more.
               </p>
               <div className="flex flex-col gap-2 text-muted-foreground">
                 <p><strong>Phone:</strong> 202-507-8000</p>

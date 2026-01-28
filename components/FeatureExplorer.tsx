@@ -7,26 +7,26 @@ import { cn } from "@/lib/utils"
 const features = [
     {
         id: "chatbot",
-        title: "Smart Automation",
-        description: "Engage donors 24/7 with authentic, AI-driven conversations that feel personal and impactful.",
+        title: "Smart Engagement",
+        description: "Scalable, authentic conversations that connect with donors on a personal level.",
         icon: Bot,
-        image: "/images/chatbot-ui.png", // Generated image
+        image: "/images/chatbot-ui-v3.png",
         color: "bg-blue-100 text-blue-600",
     },
     {
         id: "crm",
-        title: "Seamless Integration",
-        description: "Connect with your existing CRM to track every interaction, ensuring no donor data is lost.",
+        title: "Unified Data",
+        description: "Sync effortlessly with your CRM to maintain a single source of truth for every interaction.",
         icon: Database,
-        image: null, // Placeholder to be rendered as code
+        image: "/images/crm-integration-v2.png",
         color: "bg-indigo-100 text-indigo-600",
     },
     {
         id: "analytics",
-        title: "Real-time Analytics",
-        description: "Measure impact and optimize your outreach with live data dashboards and actionable insights.",
+        title: "Actionable Insights",
+        description: "Visualize your impact with real-time dashboards that drive smarter decision-making.",
         icon: BarChart3,
-        image: null, // Placeholder to be rendered as code
+        image: "/images/analytics-dashboard-v2.png",
         color: "bg-purple-100 text-purple-600",
     },
 ]

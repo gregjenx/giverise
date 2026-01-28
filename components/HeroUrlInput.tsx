@@ -1,5 +1,6 @@
 "use client"
 
+import { useRouter } from "next/navigation"
 import { useState } from "react"
 import { ArrowRight, Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -7,11 +8,13 @@ import { Input } from "@/components/ui/input"
 
 export function HeroUrlInput() {
     const [url, setUrl] = useState("")
+    const router = useRouter()
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
-        console.log("Building chatbot for:", url)
-        // TODO: Handle submission logic here
+        if (url) {
+            router.push(`/onboarding/configure?url=${encodeURIComponent(url)}`)
+        }
     }
 
     return (
