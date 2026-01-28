@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { Suspense, useEffect, useState } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { ArrowLeft, CheckCircle2, Globe, FileText, Share2, Youtube, Shield, Settings2, User, ArrowRight } from "lucide-react"
 import Link from "next/link"
@@ -14,7 +14,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Slider } from "@/components/ui/slider"
 import { Switch } from "@/components/ui/switch"
 
-export default function ConfigurePage() {
+function ConfigurePageContent() {
     const searchParams = useSearchParams()
     const initialUrl = searchParams.get("url") || ""
 
@@ -221,5 +221,17 @@ export default function ConfigurePage() {
                 </form>
             </main>
         </div>
+    )
+}
+
+export default function ConfigurePage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen bg-background flex items-center justify-center">
+                <div className="animate-pulse text-muted-foreground">Loading...</div>
+            </div>
+        }>
+            <ConfigurePageContent />
+        </Suspense>
     )
 }
