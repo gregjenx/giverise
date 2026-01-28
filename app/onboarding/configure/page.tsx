@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { useSearchParams } from "next/navigation"
-import { ArrowLeft, CheckCircle2, Globe, FileText, Share2, Youtube, Shield, Settings2, User } from "lucide-react"
+import { useSearchParams, useRouter } from "next/navigation"
+import { ArrowLeft, CheckCircle2, Globe, FileText, Share2, Youtube, Shield, Settings2, User, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
@@ -26,10 +26,36 @@ export default function ConfigurePage() {
     const [creativityLevel, setCreativityLevel] = useState([50])
     const [isPrivate, setIsPrivate] = useState(false)
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const router = useRouter()
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        // TODO: Handle final submission
+
+        // Basic validation
+        const nameInput = (document.getElementById('name') as HTMLInputElement)?.value
+        const emailInput = (document.getElementById('email') as HTMLInputElement)?.value
+
+        if (!nameInput || !emailInput) {
+            alert("Please fill in all required fields")
+            return
+        }
+
+        // Simulate API call
+        console.log("Submitting configuration...", {
+            url,
+            sources: selectedSources,
+            creativity: creativityLevel[0],
+            isPrivate,
+            user: { name: nameInput, email: emailInput }
+        })
+
+        // Simulate network delay
+        await new Promise(resolve => setTimeout(resolve, 1000))
+
         console.log("Submitted configuration")
+
+        // Redirect to success/home
+        router.push('/?onboarding_success=true')
     }
 
     useEffect(() => {
