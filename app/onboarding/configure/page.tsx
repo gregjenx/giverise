@@ -78,12 +78,11 @@ function ConfigurePageContent() {
 
             <main className="flex-1 container max-w-3xl py-12 px-4">
                 <div className="mb-8 space-y-4">
-                    <h1 className="text-3xl font-bold tracking-tight">Configure Your Chatbot</h1>
+                    <h1 className="text-3xl font-bold tracking-tight">Configure Your Communications Assistant</h1>
                     <p className="text-muted-foreground text-lg">
-                        Let's set up how your chatbot learns and behaves.
+                        Let's set up how your communications assistant learns and behaves.
                     </p>
                 </div>
-
                 <form onSubmit={handleSubmit} className="space-y-8">
                     {/* Section 1: Content Sources */}
                     <Card>
