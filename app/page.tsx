@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div className="space-y-6 max-w-4xl">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl lg:text-7xl text-foreground">
-                  Rise to your mission's potential.
+                  Understand the People Who Power Your Mission
                 </h1>
                 <p className="mx-auto max-w-[800px] text-muted-foreground text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight">
                   Elevate your team. Engage your community. Amplify your impact.
