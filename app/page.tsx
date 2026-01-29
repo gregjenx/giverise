@@ -115,7 +115,7 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-3">
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <img
-                  src="/images/embedded-mission-chat.png"
+                  src="/images/giverise-connect-branded.png"
                   alt="GiveRise Connect Interface"
                   className="w-full rounded-md shadow-sm mb-4"
                 />
@@ -126,7 +126,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <img
-                  src="/images/crm-integration-visual.png"
+                  src="/images/giverise-core-branded.png"
                   alt="GiveRise Core Interface"
                   className="w-full rounded-md shadow-sm mb-4"
                 />
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border p-6 shadow-sm">
                 <img
-                  src="/images/analytics-dashboard-visual.png"
+                  src="/images/unified-impact-branded.png"
                   alt="Unified Impact Dashboard"
                   className="w-full rounded-md shadow-sm mb-4"
                 />
