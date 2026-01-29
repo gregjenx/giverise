@@ -32,7 +32,7 @@ export function HeroUrlInput() {
                     />
                 </div>
                 <Button size="lg" type="submit" className="rounded-full px-8 h-12 text-base shrink-0">
-                    Build Your Free Chatbot
+                    Build Your Communications Assistant
                     <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
             </div>
