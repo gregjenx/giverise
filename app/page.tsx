@@ -47,10 +47,10 @@ export default function Home() {
               </div>
               <div className="space-y-6 max-w-4xl">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-6xl lg:text-7xl text-foreground">
-                  Give Rise to your mission's potential.
+                  Rise to your mission's potential.
                 </h1>
                 <p className="mx-auto max-w-[800px] text-muted-foreground text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight">
-                  AI communications that unite your team and your visitors.
+                  Elevate your team. Engage your community. Amplify your impact.
                 </p>
               </div>
               <div className="flex flex-col gap-4 min-w-full pt-4 items-center">
@@ -71,10 +71,10 @@ export default function Home() {
                 <div className="space-y-2">
                   <h1 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none">
 
-                    <br /> GiveRise to true alignment.
+                    <br /> Give Rise to meaningful connection.
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    When visitors feel understood and staff feels empowered, you do more than engage—you achieve. GiveRise connects every interaction to your mission's core.
+                    When your team is empowered and your visitors feel heard, you do more than just engage—you grow. GiveRise lifts every interaction to its full potential.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -106,9 +106,9 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Our Tools
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Everything You Need to Align</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Everything You Need to Rise</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  One platform, two powerful tools. GiveRise Connect helps visitors find their way, while GiveRise Core ensures your staff is there to guide them.
+                  Raise the bar for engagement. GiveRise Connect guides your visitors, while GiveRise Core empowers your staff to lead.
                 </p>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Pricing
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Alignment at Every Stage</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Growth at Every Stage</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Transparent pricing designed to help you scale your impact, not your overhead.
                 </p>
@@ -415,10 +415,10 @@ export default function Home() {
           <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Ready to Align and Rise?
+                Ready to Rise?
               </h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get in touch to see how better alignment allows you to achieve significantly more.
+                Get in touch to see how our platform empowers you to achieve significantly more.
               </p>
               <div className="flex flex-col gap-2 text-muted-foreground">
                 <p><strong>Phone:</strong> 202-507-8000</p>
