@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { UpliftingWave } from "@/components/UpliftingWave"
 import { FeatureExplorer } from "@/components/FeatureExplorer"
 import { HeroUrlInput } from "@/components/HeroUrlInput"
+import { GiveRiseCoreDemo } from "@/components/GiveRiseCoreDemo"
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
             </Link>
             <Link href="#pricing" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
               Pricing
+            </Link>
+            <Link href="/showcase" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
+              Showcase
             </Link>
             <Link href="#resources" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground/80">
               Resources
@@ -99,7 +103,29 @@ export default function Home() {
           </div>
         </section>
         <FeatureExplorer />
-        <section id="tools" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-slate-50 dark:bg-slate-900 border-t">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-blue-100 text-blue-800 px-3 py-1 text-sm font-medium">
+                  GiveRise Core
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-5xl">
+                  Guided Freedom.
+                </h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  The heart of our platform is a decision tree that never feels restrictive.
+                  Users can follow a structured path or express their intent in their own words at any moment.
+                </p>
+              </div>
+            </div>
+
+            <GiveRiseCoreDemo />
+
+          </div>
+        </section>
+
+        <section id="tools" className="w-full py-12 md:py-24 lg:py-32 bg-white">
           <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
